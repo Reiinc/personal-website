@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="shortcut icon" href="/assets/img/Ra.svg" type="image/x-icon">
+    <title>Raihan Iskandar - Personal Website</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="nav-logo"><img src="/assets/img/logo.svg" alt="Website Logo"></a>
+        <nav class="navbar" id="primary-nav">
+            <ul class="nav-menu">
+                <li class="nav-items">
+                    <a href="#about" class="nav-links">.about</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#experience" class="nav-links">.experience</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#project" class="nav-links">.project</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#contact" class="nav-links">.contact</a>
+                </li>
+                <li class="nav-items">
+                    <a href="https://drive.google.com/file/d/1rQ0GngY2wgAZDrpGYeI9ic7X97UNDLA7/view?usp=share_link" target="_blank" class="nav-links" id="resume">.resume</a>
+                </li>
+                <div class="social">
+                    <a target="_blank" href="https://github.com/Reiinc"><img src="/assets/img/github.svg" alt="Raihan Github Page"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/raihaniskandar/"><img src="/assets/img/linkedin.svg" alt="Raihan LinkedIn Page"></a>
+                </div>
+            </ul>
+            <button aria-controls="primary-nav" class="hamburger">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero-section wrapper">
+        <div class="caption">
+            <p>Hi, my name is</p>
+        </div>
+        <div class="title">
+            <h2>Raihan Iskandar.</h2>
+        </div>
+        <div class="subtitle">
+            <h3>I'm a Frontend Developer.</h3>
+        </div>
+        <div class="description">
+            <p>Who loves looking for great website on the web and has an undying love for lasagna.</p>
+        </div>
+        <div class="arrow">
+            <a href="#about"><img src="/assets/img/arrow-down.svg" alt=""></a>
+        </div>
+        <div class="social">
+            <a href="https://github.com/Reiinc" target="_blank"><img src="/assets/img/github.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/raihaniskandar/" target="_blank"><img src="/assets/img/linkedin.svg" alt=""></a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section wrapper">
+            <h2 class="title-secondary"><span>.about</span></h2>
+        <div class="text">
+            <div class="desc">
+                <p>Hi my name is Raihan and I enjoy making things on the internet. My interest in Web Development started after a programming video about web development popped up on my feed. Turns out building things on the web is quite a lot of fun and taught me a lot on being a problem solver.</p><br>
+                <p>Recently I’ve been dealing with sort of programming technologies such as:
+                    <ul class="skill-menu">
+                        <li class="skill-item">HTML/CSS</li>
+                        <li class="skill-item">SCSS</li>
+                        <li class="skill-item">JavaScript</li>
+                        <li class="skill-item">PHP</li>
+                        <li class="skill-item">Laravel Framework</li>
+                    </ul>
+                </p>
+            </div>
+            <img src="/assets/img/dot.svg" alt="">
+        </div>
+    </section>
+    <section id="experience" class="wrapper">
+        <h2 class="title-secondary"><span>.experience</span></h2>
+        <div class="exp-card-title">
+            <h3>Project Based Internship : Fullstack Developer at QWords</h3>
+        </div>
+        <div class="exp-card-desc">
+            <p>A Virtual Internship Experience where I finished various task related with the activity of a Fullstack Developer from QWords, such as mastering JavaScript and it’s framework, PHP and it’s Framework and API, understanding databases using MySQL.</p>
+        </div>
+    </section>
+
+    <section id="project" class="wrapper">
+        <h2 class="title-secondary"><span>.project</span></h2>
+        <div class="project-wrapper">
+            <div class="project-card-wrapper">
+                <div class="project-image">
+                    <img src="/assets/img/project 1.PNG" alt="">
+                </div>
+                <div class="project-desc">
+                    <h3>QWords Landing Page</h3>
+                    <p>I built this landing page for my Internship task for QWords. This project used PHP, Laravel Framework, and Taildwind CSS</p>
+                    <div class="btn">
+                        <a href="https://github.com/Reiinc/virtual-internship-program-qwords.git" target="_blank"><button>Github Page</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-wrapper">
+                <div class="project-image">
+                    <img src="/assets/img/project 2.PNG" alt="">
+                </div>
+                <div class="project-desc">
+                    <h3>My Personal Website</h3>
+                    <p>This is the project that you're currently seeing. I built and design this using Figma, HTML/CSS with SASS, and some JavaScript.</p>
+                    <div class="btn">
+                        <a href="https://github.com/Reiinc/personal-website.git" target="_blank"><button>Github Page</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="contact-wrapper">
+            <h3 style="text-align: center;">Leave me a message</h3>
+
+            <form id="contact-form" class="fcf-form-class" method="post" action="https://formsubmit.co/8a941de13f1fcc4ee44496e0f9af8000">
+
+                <!---Honeypot--->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!---Disable Captcha--->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="https://snazzy-dasik-871c5f.netlify.app">
+
+				<a name="contact"></a>
+
+				<input class="input-field" type="text" name="name" placeholder="name" required>
+
+				<input class="input-field" type="text" name="email" placeholder="email" required>
+
+				<textarea class="input-field" name="message" placeholder="write me a message here" required></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p style="text-align: center;">Design & Built by Raihan Iskandar</p>
+    </footer>
+
+    <script type="text/javascript" src="/assets/js/app.js" defer></script>
+</body>
+</html>
