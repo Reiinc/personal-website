@@ -19,12 +19,13 @@ function closeMenu() {
     document.body.classList.remove('no-scroll')
 }
 
-gsap.fromTo(".title", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 3});
+gsap.fromTo(".title", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 2});
 gsap.fromTo(".subtitle", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 2}, "-=1");
-gsap.fromTo("#smallText", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 1}, "-=1")
+gsap.fromTo("#smallText", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 1}, "-=1");
+gsap.fromTo("#social", {opacity: 0, x: 20}, {opacity: 1, x: 0, duration: 1}, "-=1");
 
-gsap.fromTo(".header", {opacity: 0}, {opacity: 1, duration: 1});
-gsap.fromTo("#last", {opacity: 0, y: -20}, {opacity: 1, y: 0, duration: 1 }, "-=1");
+gsap.fromTo(".header", {opacity: 0}, {opacity: 1, duration: 3}, "-=1");
+gsap.fromTo("#last", {opacity: 0, y: -20}, {opacity: 1, y: 0, duration: 1 }, "-=3");
 
 var tl = gsap.timeline({
     scrollTrigger: {
