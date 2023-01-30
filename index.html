@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <a href="/" class="nav-logo"><img src="/assets/img/logo.svg" alt="Website Logo"></a>
-        <nav class="navbar" id="primary-nav">
+        <nav class="navbar">
             <ul class="nav-menu">
                 <li class="nav-items">
                     <a href="#about" class="nav-links">.about</a>
@@ -34,7 +34,7 @@
                     <a target="_blank" href="https://www.linkedin.com/in/raihaniskandar/"><img src="/assets/img/linkedin.svg" alt="Raihan LinkedIn Page"></a>
                 </div>
             </ul>
-            <button aria-controls="primary-nav" class="hamburger">
+            <button class="hamburger">
                 <span class="bar1"></span>
                 <span class="bar2"></span>
                 <span class="bar3"></span>
@@ -43,7 +43,7 @@
     </header>
 
     <section class="hero-section wrapper">
-        <div class="caption">
+        <div class="caption" id="smallText">
             <p>Hi, my name is</p>
         </div>
         <div class="title">
@@ -52,10 +52,10 @@
         <div class="subtitle">
             <h3>I'm a Frontend Developer.</h3>
         </div>
-        <div class="description">
+        <div class="description" id="smallText">
             <p>Who loves looking for great website on the web and has an undying love for lasagna.</p>
         </div>
-        <div class="arrow">
+        <div class="arrow" id="last">
             <a href="#about"><img src="/assets/img/arrow-down.svg" alt=""></a>
         </div>
         <div class="social">
@@ -65,7 +65,7 @@
     </section>
 
     <section id="about" class="about-section wrapper">
-            <h2 class="title-secondary"><span>.about</span></h2>
+        <h2 class="title-secondary"><span>.about</span></h2>
         <div class="text">
             <div class="desc">
                 <p>Hi my name is Raihan and I enjoy making things on the internet. My interest in Web Development started after a programming video about web development popped up on my feed. Turns out building things on the web is quite a lot of fun and taught me a lot on being a problem solver.</p><br>
@@ -150,10 +150,12 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <p style="text-align: center;">Design & Built by Raihan Iskandar</p>
     </footer>
 
     <script type="text/javascript" src="/assets/js/app.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 </body>
 </html>

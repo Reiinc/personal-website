@@ -18,3 +18,50 @@ function closeMenu() {
     navMenu.classList.remove("active");
     document.body.classList.remove('no-scroll')
 }
+
+gsap.fromTo(".title", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 2});
+gsap.fromTo(".subtitle", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 2}, "-=1");
+gsap.fromTo("#smallText", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 1}, "-=1")
+
+gsap.fromTo(".header", {opacity: 0}, {opacity: 1, duration: 1});
+gsap.fromTo("#last", {opacity: 0, y: -20}, {opacity: 1, y: 0, duration: 1 }, "-=1");
+
+var tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#about",
+        start: "top center",
+        end: "+=300"
+    }
+});
+
+tl.fromTo("#about", {opacity: 0, y: 50}, {opacity: 1, y: 0, ease: "power2", duration: 1});
+
+var tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#experience",
+        start: "top center",
+        end: "+=300"
+    }
+});
+
+tl.fromTo("#experience", {opacity: 0, y: 50}, {opacity: 1, y: 0, ease: "power2", duration: 1});
+
+var tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#project",
+        start: "top center",
+        end: "+=300"
+    }
+});
+
+tl.fromTo("#project", {opacity: 0, y: 50}, {opacity: 1, y: 0, ease: "power2", duration: 1});
+
+var tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "top center",
+        end: "+=300"
+    }
+});
+
+tl.fromTo("#contact", {opacity: 0, y: 50}, {opacity: 1, y: 0, ease: "power2", duration: 1});
