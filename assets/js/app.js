@@ -19,7 +19,7 @@ function closeMenu() {
     document.body.classList.remove('no-scroll')
 }
 
-gsap.fromTo(".title", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 2});
+gsap.fromTo(".title", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 3});
 gsap.fromTo(".subtitle", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 2}, "-=1");
 gsap.fromTo("#smallText", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 1}, "-=1")
 
